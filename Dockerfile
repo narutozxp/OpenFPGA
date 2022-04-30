@@ -29,6 +29,7 @@ RUN python3 -m pip install --user --no-cache-dir notebook
 RUN python3 -m pip install --user --no-cache-dir jupyterlab
 RUN python3 -m pip install --user --no-cache-dir jupyterhub
 RUN python3 -m pip install --user --no-cache-dir jupyter-server-proxy
+RUN python3 -m pip install --user --no-cache-dir jupyter-vscode-proxy
 
 RUN npm install @jupyterlab/server-proxy
 RUN jupyter serverextension enable --py jupyter_server_proxy
